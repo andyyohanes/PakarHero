@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:gravity="center">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:gravity="center">
+
+            <com.wanderingcan.persistentsearch.PersistentSearchView
+                android:id="@+id/sbMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </com.wanderingcan.persistentsearch.PersistentSearchView>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsAfterLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/white">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabExpertiseLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expertise"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabInbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inbox" />
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsBeforeLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/white">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabExpertise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expertise"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign in / join" />
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.radicallabsinc.pakarhero.ui.NoSwipeViewPager
+        android:id="@+id/vpMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.radicallabsinc.pakarhero.ui.NoSwipeViewPager>
+
+</LinearLayout>

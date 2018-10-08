@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "432185501243",
+    "firebase_url": "https://pakarhero-fcb5c.firebaseio.com",
+    "project_id": "pakarhero-fcb5c",
+    "storage_bucket": "pakarhero-fcb5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432185501243:android:6b5a97a8117e3994",
+        "android_client_info": {
+          "package_name": "com.radicallabsinc.pakarhero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432185501243-v29mbttl35s0gkq4p3ff3icl1liu33dp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.radicallabsinc.pakarhero",
+            "certificate_hash": "14b340cfe3f4384ccde4b98f5dc85d7ff1ccf57f"
+          }
+        },
+        {
+          "client_id": "432185501243-qvpcoub7f8mam3nf12lf778ksronvvcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0jq9t0rcum52GUQ6fGJlDc8-xryjrSWY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432185501243-qvpcoub7f8mam3nf12lf778ksronvvcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

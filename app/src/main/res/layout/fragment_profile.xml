@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/profile_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/profile_photo_margin_top"
+                android:layout_marginLeft="@dimen/profile_edge_margin"
+                android:layout_marginRight="@dimen/profile_edge_margin">
+                <FrameLayout
+                    android:id="@+id/profile_photo_container"
+                    android:layout_width="@dimen/profile_avatar_contaner_size"
+                    android:layout_height="@dimen/profile_avatar_contaner_size"
+                    android:layout_centerHorizontal="true">
+                    <ImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="@dimen/profile_avatar_size"
+                        android:layout_height="@dimen/profile_avatar_size"
+                        android:layout_alignParentTop="true"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/ic_user"
+                        android:scaleType="centerCrop"/>
+                    <ImageButton
+                        android:id="@+id/profile_add_photo_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/profile_img"
+                        android:layout_gravity="right|bottom"
+                        android:background="@null"
+                        android:src="@drawable/btn_signup_add_photo"/>
+
+                </FrameLayout>
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/profile_photo_container"
+                    android:layout_centerHorizontal="true"
+                    android:text="Username"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/general_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_header"
+                android:layout_marginTop="@dimen/profile_photo_margin_top"
+                android:layout_marginLeft="@dimen/profile_edge_margin"
+                android:layout_marginRight="@dimen/profile_edge_margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/profile_firstname_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/firstname_et"
+                            style="@style/AuthTextField"
+                            android:paddingTop="@dimen/login_input_padding"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:hint="@string/first_name" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_lastname_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/lastname_et"
+                            style="@style/AuthTextField"
+                            android:paddingTop="@dimen/login_input_padding"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:hint="@string/last_name" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_country_code_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/country_code_et"
+                            style="@style/AuthTextField"
+                            android:paddingTop="@dimen/login_input_padding"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:inputType="phone|textNoSuggestions"
+                            android:maxLength="50"
+                            android:hint="@string/country_code" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_phone_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/phone_number_et"
+                            style="@style/AuthTextField"
+                            android:paddingTop="@dimen/login_input_padding"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:inputType="phone|textNoSuggestions"
+                            android:maxLength="50"
+                            android:hint="@string/phone_number" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_languages_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/languages_et"
+                            style="@style/AuthTextField"
+                            android:paddingTop="@dimen/login_input_padding"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:hint="@string/languages" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_desc_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/desc_et"
+                            style="@style/AuthTextFieldMultiLine"
+                            android:paddingTop="@dimen/login_input_padding"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:inputType="text|textNoSuggestions|textMultiLine"
+                            android:lines="5"
+                            android:maxLength="200"
+                            android:gravity="top"
+                            android:hint="@string/desc" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llExpertForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/general_form"
+                android:layout_marginLeft="@dimen/profile_edge_margin"
+                android:layout_marginRight="@dimen/profile_edge_margin"
+                android:layout_marginTop="@dimen/profile_photo_margin_top"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/profile_paypal_email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/paypal_email_et"
+                            style="@style/AuthTextField"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:hint="@string/paypal_email"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:paddingTop="@dimen/login_input_padding" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_bank_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bank_name_et"
+                            style="@style/AuthTextField"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:hint="@string/bank_name"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:paddingTop="@dimen/login_input_padding" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_bank_branch_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bank_branch_name_et"
+                            style="@style/AuthTextField"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:hint="@string/bank_branch_name"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:paddingTop="@dimen/login_input_padding" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_bank_account_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bank_account_name_et"
+                            style="@style/AuthTextField"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:hint="@string/bank_account_name"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:paddingTop="@dimen/login_input_padding" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/profile_bank_account_number_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_half_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintTextAppearance="@style/SignInTextLabel">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bank_account_number_et"
+                            style="@style/AuthTextField"
+                            android:digits="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0987654321.-_@ "
+                            android:hint="@string/bank_account_number"
+                            android:inputType="text|textNoSuggestions"
+                            android:maxLength="50"
+                            android:paddingBottom="@dimen/login_input_padding"
+                            android:paddingTop="@dimen/login_input_padding" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/ic_check_white_24dp"/>
+</RelativeLayout>

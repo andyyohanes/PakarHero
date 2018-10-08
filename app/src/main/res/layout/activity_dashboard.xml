@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.dashboard.DashboardActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:gravity="center">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextColor="@color/white"
+            android:gravity="center">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabsCases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/white"
+            app:tabSelectedTextColor="@color/white">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabCustomerCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Case" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabMyCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Case" />
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.radicallabsinc.pakarhero.ui.NoSwipeViewPager
+        android:id="@+id/vpDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.radicallabsinc.pakarhero.ui.NoSwipeViewPager>
+
+</LinearLayout>

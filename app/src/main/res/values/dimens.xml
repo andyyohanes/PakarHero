@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--login-->
+    <dimen name="login_large_font">18sp</dimen>
+    <dimen name="login_primary_font">16sp</dimen>
+    <dimen name="login_secondary_font">14sp</dimen>
+    <dimen name="login_half_margin">8dp</dimen>
+    <dimen name="login_base_margin">16dp</dimen>
+    <dimen name="login_double_margin">32dp</dimen>
+    <dimen name="login_input_padding">16dp</dimen>
+    <dimen name="fb_button_margin">24dp</dimen>
+    <dimen name="fb_inner_small_margin">6dp</dimen>
+    <dimen name="fb_inner_margin">11dp</dimen>
+    <dimen name="fb_text_font">14sp</dimen>
+    <dimen name="forgot_width">340dp</dimen>
+    <dimen name="forgot_height">324dp</dimen>
+    <dimen name="forgot_img_margin">32dp</dimen>
+    <dimen name="forgot_text_margin">24dp</dimen>
+    <dimen name="forgot_button_margin">18dp</dimen>
+    <dimen name="forgot_text_font">16sp</dimen>
+    <dimen name="forgot_button_font">14sp</dimen>
+
+    <!--Profile Screen-->
+    <dimen name="profile_photo_margin_top">34dp</dimen>
+    <dimen name="profile_edge_margin">30dp</dimen>
+    <dimen name="profile_input_padding">18dp</dimen>
+    <dimen name="profile_line_margin">16dp</dimen>
+    <dimen name="profile_primary_font">16sp</dimen>
+    <dimen name="profile_secondary_font">14sp</dimen>
+    <dimen name="profile_checkbox_padding">12dp</dimen>
+    <dimen name="profile_agreement_inner_margin">24dp</dimen>
+    <dimen name="agree_button_font">14sp</dimen>
+    <dimen name="popup_elevation">5dp</dimen>
+    <dimen name="root_popup_top">7dp</dimen>
+    <dimen name="root_popup_small_height">64dp</dimen>
+    <dimen name="profile_button_edge_margin">24dp</dimen>
+    <dimen name="profile_button_top_margin">16dp</dimen>
+    <dimen name="points_edge_padding">8dp</dimen>
+    <dimen name="points_top_padding">4dp</dimen>
+    <dimen name="profile_header_big_margin">48dp</dimen>
+    <dimen name="profile_header_small_margin">24dp</dimen>
+    <dimen name="profile_avatar_contaner_size">100dp</dimen>
+    <dimen name="profile_avatar_size">100dp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvWorkHistoryPeriod"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1999-2000"
+            android:textSize="16sp"
+            android:singleLine="false"/>
+        <TextView
+            android:id="@+id/tvWorkHistoryCompany"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textSize="16sp"
+            android:singleLine="false"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWorkHistoryDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textSize="14sp"
+        android:text="Description"
+        android:singleLine="false"/>
+
+</LinearLayout>

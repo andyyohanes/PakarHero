@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.Chat.ChatMenuActivity">
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="300"
+        android:title="Menu"
+        android:icon="@drawable/ic_menu"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/profile_menu"
+                android:title="My Profile"/>
+            <item
+                android:id="@+id/logout_menu"
+                android:title="Logout"
+                />
+
+        </menu>
+    </item>
+
+</menu>

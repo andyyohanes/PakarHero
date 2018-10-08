@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />
+
+    <style name="AuthStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="AuthTextFieldLarge">
+        <!--<item name="fontPath">@string/roboto_regular</item>-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/login_large_font</item>
+    </style>
+
+    <style name="AuthTextField">
+        <!--<item name="fontPath">@string/roboto_regular</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:textColorHint">@color/black_38</item>
+        <item name="android:textSize">@dimen/login_primary_font</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AuthTextFieldMultiLine">
+        <!--<item name="fontPath">@string/roboto_regular</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:textColorHint">@color/black_38</item>
+        <item name="android:textSize">@dimen/login_primary_font</item>
+        <item name="android:singleLine">false</item>
+    </style>
+
+    <style name="AuthTextFieldSmall">
+        <!--<item name="fontPath">@string/roboto_regular</item>-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/login_secondary_font</item>
+    </style>
+
+    <style name="SignInTextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/login_secondary_font</item>
+    </style>
+
+    <style name="RatingbarGold" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/light_gray</item>
+        <item name="colorControlActivated">@color/golden_yellow</item>
+
+        <!--<item name="android:colorControlNormal">@color/yellow_dusk</item>
+        <item name="android:colorControlActivated">@color/light_gray</item>-->
+    </style>
+
+</resources>
